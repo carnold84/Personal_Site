@@ -1,0 +1,24 @@
+.main-sections > * {
+    display: none;
+}
+
+.main-sections > *:last-child {
+    display: block;
+}
+
+.main-sections > *:target {
+    display: block;
+}
+
+.main-sections > *:target ~ * {
+    display: none;
+}
+
+.section {
+    
+    width: 100%;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}

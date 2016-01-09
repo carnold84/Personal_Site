@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/app.css">
+    
+    <script src="js/libs/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+    <!--[if lt IE 9]>
+    <div class="no-browser-support-message">
+
+        <p class="no-browser-support-message__text">This browser is not supported. For an optimum experience please use a modern browser.</p>
+
+    </div>
+    <![endif]-->
+
+    <div class="no-js-message">
+
+        <p class="no-js-message__text">Javascript is required for this site. Please enable it for the best experience.</p>
+
+    </div>
+    <script>
+        // hide no js message as soon as possible
+        document.querySelector('.no-js-message').style.display = 'none';
+    </script>
+
+    <div class="main-header">
+
+        <h1 class="main-header__title">Personal Site</h1>
+
+    </div>
+
+    <div class="main-nav">
+
+        <script id="main-menu" type="text/x-handlebars-template">
+            <ul class="main-menu">
+
+                {{#each menuItems}}
+                <li class="main-menu__item">
+                    <a class="main-menu__item-link" data-id="{{id}}" href="{{href}}">{{title}}</a>
+                </li>
+                {{/each}}
+
+            </ul>
+        </script>
+
+    </div>
+
+    <div class="main-content">
+
+        <script id="sections" type="text/x-handlebars-template">
+
+            <div class="main-sections">
+
+                    {{#each sections}}
+                    <section id="{{id}}" class="section">
+                        {{title}}
+                    </section>
+                    {{/each}}
+
+            </div>
+
+        </script>
+
+    </div>
+    
+    <!-- <script src="js/libs/require.js" data-main="js/app-built"></script> -->
+
+    <script src="../src/libs/require.js" data-main="../src/app"></script>
+
+</body>
+</html>

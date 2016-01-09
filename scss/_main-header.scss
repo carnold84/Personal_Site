@@ -1,0 +1,23 @@
+.main-header {
+    
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: $main-header-BG;
+    margin: 0;
+    display: table;
+}
+
+.main-header__title {
+    
+    font-family: montserratlight, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: normal;
+    color: $main-header__TITLE_COLOR;
+    padding: 0 0 0 15px;
+    vertical-align: middle;
+    display: table-cell;
+}

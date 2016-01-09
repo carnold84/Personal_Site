@@ -1,0 +1,52 @@
+.main-nav {
+    
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 40px;
+    left: 0;
+    background-color: $main-menu-BG;
+    overflow-x: auto;
+}
+
+.js {
+    
+    .main-nav {
+
+        overflow-x: hidden;
+    }
+}
+
+.main-menu {
+    
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 300ms ease;
+    display: table;
+}
+
+.main-menu__item {
+
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+
+    a {
+
+        font-family: montserratlight, Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        line-height: 1em;
+        color: $main-menu-LINK_COLOUR;
+        padding: 0 15px;
+
+        &:hover, &.active {
+
+            color: $main-menu-LINK_COLOUR__HOVER;
+        }
+    }
+}
